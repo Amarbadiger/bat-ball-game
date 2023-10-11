@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bat cricket game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>BAT BALL STUMP GAME</h1>
+        <div class="images">
+            <img src="img/you.png" alt="" id="you" width="200px" height="200px">
+            <img src="img/me.png" alt="" id="me" width="200px" height="200px">
+        </div>
+        <h2></h2>
+    <div class="buttons">
+        <button onclick="
+    let result = Math.floor((Math.random() * 3) + 1);
+    console.log(result)
+    let bat='your choice is bat';
+    let you=document.querySelector('#you').src='img/bat.png';
+    let me;
+    if(result==1){
+            document.querySelector('h2').innerText=bat+' and my choice is bat: its tie🤝';
+            document.querySelector('#me').src='img/bat.png';
+        }
+        else if(result==2){
+            document.querySelector('h2').innerText=bat+' and my choice ball: you won 🏆';
+            me=document.querySelector('#me').src='img/ball.png';
+        }
+        else{
+            document.querySelector('h2').innerText=bat+' and my choice is: stump you lossed😔';
+            me=document.querySelector('#me').src='img/stump.png';
+        }
+    ">BAT</button>
+        <button onclick="
+    result = Math.floor((Math.random() * 3) + 1);
+    console.log(result)
+    let BALL='your choice is ball';
+    you=document.querySelector('#you').src='img/ball.png';
+    if(result==1){
+            document.querySelector('h2').innerText=BALL+' and my choice is bat: you lossed😔';
+            document.querySelector('#me').src='img/bat.png';
+        }
+        else if(result==2){
+            document.querySelector('h2').innerText=BALL+' and my choice ball: its tie🤝';
+            me=document.querySelector('#me').src='img/ball.png';
+        }
+        else{
+            document.querySelector('h2').innerText=BALL+' and my choice is stump: you won🏆';
+            me=document.querySelector('#me').src='img/stump.png';
+        }
+    ">BALL</button>
+        <button onclick="
+     result = Math.floor((Math.random() * 3) + 1);
+    console.log(result)
+    let STUMP='your choice is stump';
+    you=document.querySelector('#you').src='img/stump.png';
+    if(result==1){
+            document.querySelector('h2').innerText=STUMP+' and my choice is bat: you won🏆';
+            document.querySelector('#me').src='img/bat.png';
+        }
+        else if(result==2){
+            document.querySelector('h2').innerText=STUMP+' and my choice ball: you lossed😔';
+            me=document.querySelector('#me').src='img/ball.png';
+        }
+        else{
+            document.querySelector('h2').innerText=STUMP+' and my choice is stump: its tie🤝';
+            me=document.querySelector('#me').src='img/stump.png';
+        }
+    ">STUMP</button>
+    </div>
+        
+    </div>
+</body>
+
+</html>
