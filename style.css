@@ -32,7 +32,12 @@ h1{
     color:rgb(221, 225, 32);
 }
 h2{
-    font-size: 30px;
+    font-size: 20px;
     text-transform: capitalize;
     color: green;
+}
+h3{
+    font-size: 20px;
+    color: red;
+    text-transform: capitalize;
 }

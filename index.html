@@ -16,65 +16,14 @@
             <img src="img/me.png" alt="" id="me" width="200px" height="200px">
         </div>
         <h2></h2>
-    <div class="buttons">
-        <button onclick="
-    let result = Math.floor((Math.random() * 3) + 1);
-    console.log(result)
-    let bat='your choice is bat';
-    let you=document.querySelector('#you').src='img/bat.png';
-    let me;
-    if(result==1){
-            document.querySelector('h2').innerText=bat+' and my choice is bat: its tie🤝';
-            document.querySelector('#me').src='img/bat.png';
-        }
-        else if(result==2){
-            document.querySelector('h2').innerText=bat+' and my choice ball: you won 🏆';
-            me=document.querySelector('#me').src='img/ball.png';
-        }
-        else{
-            document.querySelector('h2').innerText=bat+' and my choice is: stump you lossed😔';
-            me=document.querySelector('#me').src='img/stump.png';
-        }
-    ">BAT</button>
-        <button onclick="
-    result = Math.floor((Math.random() * 3) + 1);
-    console.log(result)
-    let BALL='your choice is ball';
-    you=document.querySelector('#you').src='img/ball.png';
-    if(result==1){
-            document.querySelector('h2').innerText=BALL+' and my choice is bat: you lossed😔';
-            document.querySelector('#me').src='img/bat.png';
-        }
-        else if(result==2){
-            document.querySelector('h2').innerText=BALL+' and my choice ball: its tie🤝';
-            me=document.querySelector('#me').src='img/ball.png';
-        }
-        else{
-            document.querySelector('h2').innerText=BALL+' and my choice is stump: you won🏆';
-            me=document.querySelector('#me').src='img/stump.png';
-        }
-    ">BALL</button>
-        <button onclick="
-     result = Math.floor((Math.random() * 3) + 1);
-    console.log(result)
-    let STUMP='your choice is stump';
-    you=document.querySelector('#you').src='img/stump.png';
-    if(result==1){
-            document.querySelector('h2').innerText=STUMP+' and my choice is bat: you won🏆';
-            document.querySelector('#me').src='img/bat.png';
-        }
-        else if(result==2){
-            document.querySelector('h2').innerText=STUMP+' and my choice ball: you lossed😔';
-            me=document.querySelector('#me').src='img/ball.png';
-        }
-        else{
-            document.querySelector('h2').innerText=STUMP+' and my choice is stump: its tie🤝';
-            me=document.querySelector('#me').src='img/stump.png';
-        }
-    ">STUMP</button>
+        <h3></h3>
+        <div class="buttons">
+            <button onclick="bat();">BAT</button>
+            <button onclick="ball();">BALL</button>
+            <button onclick="stump();">STUMP</button>
+        </div>
     </div>
-        
-    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
